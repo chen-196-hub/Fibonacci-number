@@ -1,3 +1,3 @@
-def fibo num
+def fib num
 
 end
