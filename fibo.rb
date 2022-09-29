@@ -1,0 +1,3 @@
+def fibo num
+
+end
