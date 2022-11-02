@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative 'fibo'
-# require_relative '../fibo/fibo_takuma'
 
 RSpec.describe '#fibo' do
   # rubocop:disable Style/LineLength
