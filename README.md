@@ -3,30 +3,56 @@
 
 # 実行例
 ```
-irb(main):007:0> fib 1
+fib 1
 => 1
-irb(main):005:0> fib 10
+fib 10
 => 55
 ```
 
 # tip
-
-build
+### build
 ```
 docker compose build
 ```
-
-up
+### up
 ```
 docker compose up
 ```
 
-run test
+
+##  what is the Goal?
+```ruby
+............................................................................................................................................................................................................................................................................................................
+
+Finished in 0.29143 seconds (files took 0.1542 seconds to load)
+300 examples, 0 failures
+```
+pass test
 ```
 docker compose run app bundle exec rspec fibo_spec.rb
 ```
 
-down (if you finish)
+
+## how to do ?
+you can just add `fibo (number)`　as below into `fibo.rb`
+```ruby
+def fib num
+ # you code
+end
+fibo 1 || fibo 10  # <= add here
+```
+and run
+```
+docker compose run app ruby fibo.rb
+```
+
+
+
+## down (if you finish)
 ```
 docker compose down
+```
+& delete unuse CONTAINERS
+```
+docker rm `docker ps -f "status=exited" -q`
 ```
