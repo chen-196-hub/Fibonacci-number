@@ -21,20 +21,21 @@ docker compose up
 
 
 ##  what is the Goal?
+pass test!!
 ```ruby
 ............................................................................................................................................................................................................................................................................................................
 
 Finished in 0.29143 seconds (files took 0.1542 seconds to load)
 300 examples, 0 failures
 ```
-pass test
+run test
 ```
 docker compose run app bundle exec rspec fibo_spec.rb
 ```
 
 
 ## how to do ?
-you can just add `fibo (number)`　as below into `fibo.rb`
+you can just add `fibo (number)` into `fibo.rb` as below
 ```ruby
 def fib num
  # you code
