@@ -40,7 +40,7 @@ you can just add `fibo (number)` into `fibo.rb` as below
 def fib num
  # you code
 end
-fibo 1 || fibo 10  # <= add here
+fibo 1 # or fibo 10  <= add here
 ```
 and run
 ```
