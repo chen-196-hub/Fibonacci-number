@@ -21,16 +21,19 @@ docker compose up
 
 
 ##  what is the Goal?
+
+run test
+```
+docker compose run app bundle exec rspec fibo_spec.rb
+```
+and
+
 pass test!!
 ```ruby
 ............................................................................................................................................................................................................................................................................................................
 
 Finished in 0.29143 seconds (files took 0.1542 seconds to load)
 300 examples, 0 failures
-```
-run test
-```
-docker compose run app bundle exec rspec fibo_spec.rb
 ```
 
 
