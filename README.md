@@ -24,7 +24,7 @@ docker compose up
 
 run test
 ```
-docker compose run app bundle exec rspec fibo_spec.rb
+docker compose exec app bundle exec rspec fibo_spec.rb
 ```
 and
 
@@ -43,11 +43,12 @@ you can just add `fibo (number)` into `fibo.rb` as below
 def fib num
  # you code
 end
-fibo 1 # or fibo 10  <= add here
+puts fibo 1 # or fibo 10  <= add here
 ```
 and run
 ```
-docker compose run app ruby fibo.rb
+docker compose exec app ruby fibo.rb
+// #=> 1 # or => 55
 ```
 
 
@@ -56,7 +57,4 @@ docker compose run app ruby fibo.rb
 ```
 docker compose down
 ```
-& delete unuse CONTAINERS
-```
-docker rm `docker ps -f "status=exited" -q`
-```
+
