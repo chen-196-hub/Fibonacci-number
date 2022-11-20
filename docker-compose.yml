@@ -4,3 +4,4 @@ services:
     build: .
     volumes:
       - ./:/usr/src/app
+    tty: true # コンテナを起動させ続けるため
