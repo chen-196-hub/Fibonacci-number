@@ -11,7 +11,7 @@ fib 10
 
 # tip
 
-fork this repo to your github and clone then you can start
+fork this repo to your github and clone　it then you can start
 
 ### build
 ```
